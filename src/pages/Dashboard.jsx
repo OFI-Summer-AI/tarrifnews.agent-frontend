@@ -105,7 +105,7 @@ export default function Dashboard() {
           {/* Influential Voices */}
           <div className="hidden lg:flex flex-col gap-4 border border-gray-200 rounded-xl p-4 bg-white w-[300px] max-h-[800px] overflow-y-auto">
             <div className="flex items-center gap-2">
-              <img src={`${basePath}images/x.png`} alt="Twitter Logo" className="w-4 h-4" />
+              <img src="/tarrifnews.agent-frontend/images/x.png" className="w-4 h-4" />
               <h2 className="text-lg font-semibold">Influential Voices</h2>
             </div>
 
