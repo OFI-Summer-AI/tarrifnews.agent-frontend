@@ -12,7 +12,7 @@ export default function Dashboard() {
     {
       name: "Donald Trump",
       handle: "@realDonaldTrump",
-      date: "4/6/2018",
+      date: "4/7/2025",
       content:
         "China has been taking advantage of the United States on Trade for many years... There will be great and fast economic retaliation.",
       retweets: "12.5K",
@@ -22,7 +22,7 @@ export default function Dashboard() {
     {
       name: "Paul Krugman",
       handle: "@paulkrugman",
-      date: "5/10/2018",
+      date: "5/7/2025",
       content:
         "The steel tariffs are a textbook example of how protectionism hurts the economy. Higher costs for manufacturers will hurt American workers and consumers.",
       retweets: "9.1K",
@@ -32,7 +32,7 @@ export default function Dashboard() {
     {
       name: "Janet Yellen",
       handle: "@SecYellen",
-      date: "6/10/2025",
+      date: "6/7/2025",
       content:
         "The administration remains committed to balancing global trade fairness and protecting American innovation. #TariffStrategy",
       retweets: "6.7K",
@@ -42,7 +42,7 @@ export default function Dashboard() {
     {
       name: "Elon Musk",
       handle: "@elonmusk",
-      date: "7/2/2025",
+      date: "7/7/2025",
       content:
         "New tariffs on vehicle parts are extremely inefficient and will slow down innovation across the entire auto industry.",
       retweets: "15.8K",
@@ -52,7 +52,7 @@ export default function Dashboard() {
     {
       name: "Catherine Rampell",
       handle: "@crampell",
-      date: "7/14/2025",
+      date: "17/7/2025",
       content:
         "Trade policy decisions should be based on data, not emotions. We risk alienating allies and raising prices across the board.",
       retweets: "4.2K",
@@ -101,7 +101,7 @@ export default function Dashboard() {
           </div>
 
           {/* Influential Voices */}
-          <div className="hidden lg:flex flex-col gap-4 border border-gray-200 rounded-xl p-4 bg-white w-[300px] mt-8 max-h-[800px] overflow-y-auto">
+          <div className="hidden lg:flex flex-col gap-4 border border-gray-200 rounded-xl p-4 bg-white w-[300px] max-h-[800px] overflow-y-auto">
             <div className="flex items-center gap-2">
               <img src="/images/x.png" alt="Twitter Logo" className="w-4 h-4" />
               <h2 className="text-lg font-semibold">Influential Voices</h2>
