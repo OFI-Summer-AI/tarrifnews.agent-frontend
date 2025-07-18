@@ -2,7 +2,7 @@
   "name": "newssummary",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://MajaArament.github.io/tarrifnews.agent-frontend",
+  "homepage": "https://ofi-summer-ai.github.io/tarrifnews.agent-frontend/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
