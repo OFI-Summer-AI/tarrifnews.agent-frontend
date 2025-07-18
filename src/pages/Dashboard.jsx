@@ -8,6 +8,8 @@ export default function Dashboard() {
   const [companyData, setCompanyData] = useState({ company: "Tweets", metrics: [] });
   const [latestMetrics, setLatestMetrics] = useState({});
 
+  const basePath = import.meta.env.BASE_URL;
+
   const tweets = [
     {
       name: "Donald Trump",
@@ -89,12 +91,12 @@ export default function Dashboard() {
             </div>
 
             <img
-              src="/images/news-reel-1.png"
+              src={`${basePath}images/news-reel-1.png`}
               alt="News Section 1"
               className="rounded-xl w-full mb-6 border border-gray-200 shadow-sm"
             />
             <img
-              src="/images/news-reel-2.png"
+              src={`${basePath}images/news-reel-2.png`}
               alt="News Section 2"
               className="rounded-xl w-full border border-gray-200 shadow-sm"
             />
@@ -103,12 +105,12 @@ export default function Dashboard() {
           {/* Influential Voices */}
           <div className="hidden lg:flex flex-col gap-4 border border-gray-200 rounded-xl p-4 bg-white w-[300px] max-h-[800px] overflow-y-auto">
             <div className="flex items-center gap-2">
-              <img src="/images/x.png" alt="Twitter Logo" className="w-4 h-4" />
+              <img src={`${basePath}images/x.png`} alt="Twitter Logo" className="w-4 h-4" />
               <h2 className="text-lg font-semibold">Influential Voices</h2>
             </div>
 
             <img
-              src="/images/voices-filter-box.png"
+              src={`${basePath}images/voices-filter-box.png`}
               alt="Voices Filter"
               className="rounded-md border border-gray-200"
             />
