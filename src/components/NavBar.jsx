@@ -8,7 +8,7 @@ export default function NavBar() {
         <div className="flex justify-between items-center mb-6">
           <div className="flex items-center gap-3 font-bold text-[30px] text-white">
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="status icon"
               className="w-10 h-10 inline-block"
             />
