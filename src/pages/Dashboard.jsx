@@ -66,8 +66,8 @@ export default function Dashboard() {
       <NavBar />
 
       <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
-        {/* Tab Buttons & Influential Voices */}
         <div className="flex justify-between items-start w-full">
+          {/* Main Content */}
           <div className="flex-1 mr-6">
             <div className="flex gap-0 mb-6 border border-gray-200 rounded-lg overflow-hidden w-full max-w-full">
               <button className="flex-1 bg-white text-black px-6 py-2 text-center text-sm font-medium">
@@ -88,8 +88,16 @@ export default function Dashboard() {
               </div>
             </div>
 
-            <img src="/images/news-reel-1.png" alt="News Section 1" className="rounded-xl w-full mb-6 border border-gray-200 shadow-sm" />
-            <img src="/images/news-reel-2.png" alt="News Section 2" className="rounded-xl w-full border border-gray-200 shadow-sm" />
+            <img
+              src="/images/news-reel-1.png"
+              alt="News Section 1"
+              className="rounded-xl w-full mb-6 border border-gray-200 shadow-sm"
+            />
+            <img
+              src="/images/news-reel-2.png"
+              alt="News Section 2"
+              className="rounded-xl w-full border border-gray-200 shadow-sm"
+            />
           </div>
 
           {/* Influential Voices */}
@@ -98,27 +106,49 @@ export default function Dashboard() {
               <img src="/images/x.png" alt="Twitter Logo" className="w-4 h-4" />
               <h2 className="text-lg font-semibold">Influential Voices</h2>
             </div>
-            <img src="/images/voices-filter-box.png" alt="Voices Filter" className="rounded-md border border-gray-200" />
+
+            <img
+              src="/images/voices-filter-box.png"
+              alt="Voices Filter"
+              className="rounded-md border border-gray-200"
+            />
+
             {tweets.map((tweet, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-blue-500 rounded-full w-8 h-8 text-white flex items-center justify-center font-bold">
+                  <div className="bg-gradient-to-br from-purple-500 to-blue-500 rounded-full w-8 h-8 text-white flex items-center justify-center font-bold">
                     {tweet.name[0]}
                   </div>
                   <div className="text-sm">
-                    <p className="font-semibold text-gray-900 leading-none">{tweet.name}</p>
+                    <p className="font-semibold text-gray-900 leading-none">
+                      {tweet.name}
+                    </p>
                     <p className="text-gray-500 text-xs">{tweet.handle}</p>
                   </div>
                 </div>
+
                 <p className="text-sm text-gray-800 italic mb-2">{tweet.content}</p>
+
                 <div className="flex justify-between text-xs text-gray-500">
                   <span>{tweet.date}</span>
-                  <span>{tweet.retweets} 🔁 {tweet.likes}</span>
+                  <span>
+                    {tweet.retweets} 🔁 {tweet.likes}
+                  </span>
                 </div>
-                <div className="text-xs text-blue-600 pt-2">{tweet.badge}</div>
+
+                <div className="pt-2 flex justify-end">
+                  <span className="inline-flex items-center gap-1 bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-1 rounded-full shadow-sm">
+                    {tweet.badge === "Policy" && "📘"}
+                    {tweet.badge === "Analysis" && "📊"}
+                    {tweet.badge === "Commentary" && "💬"}
+                    {tweet.badge === "Official Statement" && "📢"}
+                    {tweet.badge === "Industry" && "🏭"}
+                    {tweet.badge}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
